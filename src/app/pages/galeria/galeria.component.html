@@ -1,0 +1,16 @@
+<div class="gallery-container">
+    <h1 class="title">Galería</h1>
+    <p class="description">Explora las imágenes de nuestra colección.</p>
+
+    <div class="gallery-grid">
+
+        @for( item of personajes; track item){
+        <div class="gallery-item">
+            <h3>{{ item.name }}</h3>
+            <img src="{{item.image}}">
+        </div>
+        }
+
+
+    </div>
+</div>
